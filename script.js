@@ -8,7 +8,7 @@
       let bagCounter = 0;
 
 
-      /* FILTRI IMMAGINI */
+      /* IMMAGINI */
 
       document.getElementById('dream-nightilight').addEventListener('click', function(){
         /* Reset stile su selezione precedente */
@@ -74,7 +74,7 @@
       } );
 
 
-            /* FILTRI COLORI */
+            /* COLORI */
 
             document.getElementById('white').addEventListener('click', function(){
               /* Aggiorno variabile, stile bottone e immagine */
@@ -93,16 +93,19 @@
 
 
 
-            /* FILTRI TAGLIA *//* 
+            /* TAGLIA */
 
             document.getElementById('size-xs').addEventListener('click', function(){
-              /* Reset stile su selezione precedente *//* 
+              /* Reset stile su selezione precedente */
               if(currentSize !== 0) {
-                document.getElementById(currentSize).style.fontWeight = 'normal';
+                console.log('Hello');
+                document.getElementById('size-xs').style.fontWeight = 'normal';
               }
-              /* Aggiorno variabile, stile bottone e immagine *//* 
+              /* Aggiorno variabile, stile bottone e immagine */
+              console.log("It's me");
               currentSize = 'size-xs';
-              document.getElementById(currentSize).style.fontWeight = 'bold';
+
+              document.getElementById('size-xs').style.fontWeight = 'bold';
             } );
       
             document.getElementById('size-s').addEventListener('click', function(){
@@ -127,7 +130,7 @@
               }
               currentSize = 'size-l';
               document.getElementById(currentSize).style.fontWeight = 'bold';
-            } );*/
+            } );
 
 
             /* Bottone reset */
